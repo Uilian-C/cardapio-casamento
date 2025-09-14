@@ -101,6 +101,28 @@
 </head>
 <body class="bg-cream-white">
 
+    <!-- Container dos Blocos Horizontais -->
+    <div class="container mx-auto px-6 pt-16 pb-12 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+
+        <!-- Bloco 1: Cabeçalho com Nomes (Menor) -->
+        <header class="text-center md:text-right md:w-2/5">
+            <h1 class="font-title text-5xl md:text-6xl text-hunter-green">Luana & Uilian</h1>
+            <p class="font-display text-lg mt-1 tracking-widest text-olive-green">Nosso Cardápio</p>
+        </header>
+
+        <!-- Bloco 2: Card de Boas-vindas (Maior) -->
+        <section class="w-full md:w-3/5">
+             <div class="bg-white/60 backdrop-blur-sm rounded-xl shadow-lg p-8 text-center">
+                <i class="fa-solid fa-leaf text-2xl text-sage-green mb-4"></i>
+                <p class="font-display text-lg italic text-dark-charcoal/90">
+                    "Cada detalhe deste dia foi pensado com todo o nosso carinho para celebrar o amor ao lado de vocês. Desfrutem de cada sabor e divirtam-se!"
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+
     <!-- Barra de Navegação Fixa -->
     <nav id="navbar" class="sticky top-0 bg-cream-white/80 backdrop-blur-lg z-50 shadow-md">
         <div class="container mx-auto px-4">
@@ -115,14 +137,6 @@
 
     <!-- Conteúdo Principal do Cardápio -->
     <main class="container mx-auto px-6 py-16 max-w-3xl">
-    
-        <!-- Mensagem dos Noivos -->
-        <section class="text-center mb-16">
-             <p class="font-display text-lg italic text-dark-charcoal/90 max-w-2xl mx-auto">
-                "Cada detalhe deste dia foi pensado com todo o nosso carinho para celebrar o amor ao lado de vocês. Desfrutem de cada sabor e divirtam-se!"
-             </p>
-             <div class="w-16 h-px bg-sage-green/50 mx-auto mt-8"></div>
-        </section>
 
         <!-- Seção: Entradas -->
         <section id="welcome" class="menu-section mb-16 opacity-0">
