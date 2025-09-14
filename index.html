@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio | Luana & Uilian</title>
+    <title>Cardápio | Nosso Casamento</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,7 +73,7 @@
         /* Animação de "pulsar" para o toque no celular */
         @keyframes tap-pop {
             50% {
-                transform: scale(1.07);
+                transform: scale(1.05);
                 color: #3A5A40; /* hunter-green */
             }
         }
@@ -88,7 +88,7 @@
         
         /* Efeito para mouse (desktop) */
         .menu-item:hover {
-            transform: scale(1.03);
+            transform: scale(1.02);
             color: #588157; /* olive-green */
         }
 
@@ -101,18 +101,11 @@
 </head>
 <body class="bg-cream-white">
 
-    <!-- Header -->
-    <header class="text-center py-16 px-4 bg-gradient-to-b from-dark-charcoal/5 to-cream-white">
-        <h1 class="font-title text-8xl text-hunter-green">Luana & Uilian</h1>
-        <p class="font-display text-2xl mt-2 tracking-widest text-olive-green">Nosso Cardápio</p>
-        <div class="w-24 h-px bg-sage-green mx-auto mt-6"></div>
-    </header>
-
     <!-- Barra de Navegação Fixa -->
     <nav id="navbar" class="sticky top-0 bg-cream-white/80 backdrop-blur-lg z-50 shadow-md">
         <div class="container mx-auto px-4">
             <div class="flex justify-center items-center space-x-4 sm:space-x-6 py-3 overflow-x-auto whitespace-nowrap">
-                <a href="#welcome" class="nav-link font-display text-sm sm:text-base text-dark-charcoal hover:text-warm-beige transition duration-300">Boas-vindas</a>
+                <a href="#welcome" class="nav-link font-display text-sm sm:text-base text-dark-charcoal hover:text-warm-beige transition duration-300">Entradas</a>
                 <a href="#main" class="nav-link font-display text-sm sm:text-base text-dark-charcoal hover:text-warm-beige transition duration-300">Almoço</a>
                 <a href="#drinks" class="nav-link font-display text-sm sm:text-base text-dark-charcoal hover:text-warm-beige transition duration-300">Bebidas</a>
                 <a href="#desserts" class="nav-link font-display text-sm sm:text-base text-dark-charcoal hover:text-warm-beige transition duration-300">Sobremesas</a>
@@ -121,37 +114,31 @@
     </nav>
 
     <!-- Conteúdo Principal do Cardápio -->
-    <main class="container mx-auto px-6 py-12 max-w-3xl">
+    <main class="container mx-auto px-6 py-16 max-w-3xl">
     
         <!-- Mensagem dos Noivos -->
-        <section class="text-center mb-12">
-             <p class="font-display text-xl italic text-dark-charcoal/90 max-w-2xl mx-auto">
+        <section class="text-center mb-16">
+             <p class="font-display text-lg italic text-dark-charcoal/90 max-w-2xl mx-auto">
                 "Cada detalhe deste dia foi pensado com todo o nosso carinho para celebrar o amor ao lado de vocês. Desfrutem de cada sabor e divirtam-se!"
              </p>
              <div class="w-16 h-px bg-sage-green/50 mx-auto mt-8"></div>
         </section>
 
-        <!-- Seção: Coquetel de Boas-vindas -->
+        <!-- Seção: Entradas -->
         <section id="welcome" class="menu-section mb-16 opacity-0">
-            <h2 class="text-4xl sm:text-5xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
-                <i class="fa-solid fa-champagne-glasses text-3xl sm:text-4xl text-warm-beige"></i>
-                <span>Coquetel de Boas-vindas</span>
+            <h2 class="text-3xl sm:text-4xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
+                <i class="fa-solid fa-champagne-glasses text-2xl sm:text-3xl text-warm-beige"></i>
+                <span>Entradas</span>
             </h2>
-            <div class="space-y-10 max-w-lg mx-auto text-left">
+            <div class="space-y-8 max-w-lg mx-auto text-left">
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Canapés Frios</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Petiscos & Antepastos</h3>
                     <div class="space-y-2">
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Mini bruschettas de tomate fresco e manjericão</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Ceviche de tilápia em barquinhas crocantes</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Rolinhos de abobrinha com ricota e nozes</p></div>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Salgados Quentes</h3>
-                    <div class="space-y-2">
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Mini quiche de alho poró</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Bolinhas de queijo com toque de sálvia</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Folhado de frango cremoso</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Seleção de Barquetes com Salame, Creme de Alho-Poró e Tapenade</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Caponata Siciliana de Berinjela com Torradas Finas</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Batatinhas Calabresas em Conserva de Ervas</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Espetinhos Festivos com Frios e Queijos</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Mix de Amendoins Temperados com Especiarias</p></div>
                     </div>
                 </div>
             </div>
@@ -159,34 +146,28 @@
 
         <!-- Seção: Almoço -->
         <section id="main" class="menu-section mb-16 opacity-0">
-            <h2 class="text-4xl sm:text-5xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
-                <i class="fa-solid fa-utensils text-3xl sm:text-4xl text-warm-beige"></i>
+            <h2 class="text-3xl sm:text-4xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
+                <i class="fa-solid fa-utensils text-2xl sm:text-3xl text-warm-beige"></i>
                 <span>Almoço</span>
             </h2>
-            <div class="space-y-10 max-w-lg mx-auto text-left">
+            <div class="space-y-8 max-w-lg mx-auto text-left">
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Ilha de Massas</h3>
-                    <p class="font-sans text-lg text-dark-charcoal/90 menu-item">Massa fresca preparada na hora com seus molhos favoritos.</p>
-                    <p class="mt-1 text-dark-charcoal/80 italic menu-item">Molhos: Sugo artesanal, Alfredo cremoso, Pesto de manjericão.</p>
-                </div>
-                <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Pratos Principais</h3>
-                    <div class="space-y-3">
-                        <div>
-                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">Medalhão de filé mignon ao molho de vinho tinto</p></div>
-                            <p class="text-dark-charcoal/80 italic text-sm pl-7">Acompanha risoto de parmesão.</p>
-                        </div>
-                        <div>
-                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">Salmão grelhado com crosta de gergelim</p></div>
-                            <p class="text-dark-charcoal/80 italic text-sm pl-7">Servido com purê de mandioquinha e legumes na manteiga.</p>
-                        </div>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Estação de Churrasco</h3>
+                     <div class="space-y-2">
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Seleção de Carnes Nobres</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Linguiça Toscana Artesanal</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Tulipas de Frango Marinadas em Ervas</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Pão de Alho Tradicional com Queijo</p></div>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Acompanhamentos</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Guarnições & Saladas</h3>
                      <div class="space-y-2">
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Arroz branco com amêndoas laminadas</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Salada de folhas nobres com figos, nozes e molho de mostarda e mel</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Arroz à Grega Clássico</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Arroz Branco Soltinho</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Farofa da Casa com Bacon e Ervas Frescas</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Salada Cremosa de Batatas com Maionese de Ervas</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Mix de Folhas Verdes com Tomate Cereja e Palmito</p></div>
                     </div>
                 </div>
             </div>
@@ -194,45 +175,45 @@
 
         <!-- Seção: Open Bar e Bebidas -->
         <section id="drinks" class="menu-section mb-16 opacity-0">
-            <h2 class="text-4xl sm:text-5xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
-                <i class="fa-solid fa-martini-glass-citrus text-3xl sm:text-4xl text-warm-beige"></i>
+            <h2 class="text-3xl sm:text-4xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
+                <i class="fa-solid fa-martini-glass-citrus text-2xl sm:text-3xl text-warm-beige"></i>
                 <span>Open Bar & Bebidas</span>
             </h2>
-            <div class="space-y-10 max-w-lg mx-auto text-left">
+            <div class="space-y-8 max-w-lg mx-auto text-left">
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold">Bar de Drinks Ibiza</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold">Bar de Drinks Ibiza</h3>
                     <p class="text-sm mt-2 mb-4 text-dark-charcoal/70 italic">(Todos os drinks podem ser preparados em versões sem álcool)</p>
                     <div class="space-y-3">
                         <div>
-                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">Refreshing</p></div>
+                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Refreshing</p></div>
                             <p class="text-dark-charcoal/80 italic text-sm pl-7">Limão, uva verde, manjericão, rum e água de coco.</p>
                         </div>
                         <div>
-                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">Harmonia</p></div>
+                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Harmonia</p></div>
                             <p class="text-dark-charcoal/80 italic text-sm pl-7">Limão, limão siciliano, vodka e xarope de amora.</p>
                         </div>
                         <div>
-                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">World Drinks</p></div>
+                            <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">World Drinks</p></div>
                             <p class="text-dark-charcoal/80 italic text-sm pl-7">Limão, banana, mel e cachaça.</p>
                         </div>
                         <div>
-                             <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">Moscow Mule</p></div>
+                             <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Moscow Mule</p></div>
                             <p class="text-dark-charcoal/80 italic text-sm pl-7">Suco de limão, xarope de gengibre e vodka.</p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Caipirinhas</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Caipirinhas</h3>
                      <div class="space-y-2">
                         <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Abacaxi, Limão, Limão Siciliano, Maracujá e Morango</p></div>
                         <p class="text-sm mt-1 text-dark-charcoal/70 pl-7">(Com Vodka Absolut, Saquê Azuma ou Cachaça Seleta/Sagatiba)</p>
                      </div>
                 </div>
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Chopp & Outras Bebidas</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Chopp & Outras Bebidas</h3>
                     <div class="space-y-2">
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">Chopp gelado servido por nosso chopeiro</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-lg text-dark-charcoal/90">Refrigerantes, sucos e água</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Chopp gelado servido por nosso chopeiro</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="font-sans text-base text-dark-charcoal/90">Refrigerantes, sucos e água</p></div>
                     </div>
                 </div>
             </div>
@@ -240,30 +221,33 @@
 
         <!-- Seção: Sobremesas e Café -->
         <section id="desserts" class="menu-section opacity-0">
-            <h2 class="text-4xl sm:text-5xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
-                <i class="fa-solid fa-cookie-bite text-3xl sm:text-4xl text-warm-beige"></i>
-                <span>Doces & Delícias</span>
+            <h2 class="text-3xl sm:text-4xl font-display text-hunter-green text-center mb-12 flex justify-center items-center gap-x-4">
+                <i class="fa-solid fa-cookie-bite text-2xl sm:text-3xl text-warm-beige"></i>
+                <span>Sobremesas</span>
             </h2>
-             <div class="space-y-10 max-w-lg mx-auto text-left">
+             <div class="space-y-8 max-w-lg mx-auto text-left">
                  <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Bolo dos Noivos</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Bolo dos Noivos</h3>
                     <div class="space-y-2">
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Massa branca com recheio de nozes e doce de leite</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Massa de Baunilha com Recheio de Abacaxi e Creme Belga</p></div>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Doces Finos</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Mesa de Doces Finos</h3>
                     <div class="space-y-2">
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Mini churros com doce de leite</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Verrine de cheesecake de maracujá</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Brigadeiro gourmet de pistache</p></div>
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Camafeu de nozes</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Brigadeiro Gourmet Belga</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Beijinho Cremoso com Coco Fresco</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dack-charcoal/80 italic">Brigadeiro de Cereja Amarena com Licor Marraschino</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Brigadeiro Gourmet de Pistache</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Verrine de Crème Brûlée</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Trufa de Panetone Artesanal</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Bombom de Caramelo com Flor de Sal</p></div>
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-display text-2xl text-olive-green font-bold mb-4">Mesa de Café</h3>
+                    <h3 class="font-display text-xl text-olive-green font-bold mb-4">Estação de Café</h3>
                     <div class="space-y-2">
-                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Café, chás variados, petit fours e licores</p></div>
+                        <div class="menu-item items-center gap-x-3"><i class="fa-solid fa-seedling text-warm-beige"></i><p class="text-dark-charcoal/80 italic">Café Especial, Chás Importados, Petit Fours e Licores Selecionados</p></div>
                     </div>
                 </div>
             </div>
@@ -273,7 +257,7 @@
 
     <!-- Footer -->
     <footer class="text-center py-12 mt-16 px-4 bg-gradient-to-t from-dark-charcoal/5 to-cream-white">
-        <p class="font-display text-2xl text-olive-green">Aproveitem cada momento conosco!</p>
+        <p class="font-display text-xl text-olive-green">Aproveitem cada momento conosco!</p>
         <p class="font-title text-5xl text-hunter-green mt-2">Com amor, Lu & Uili</p>
     </footer>
 
