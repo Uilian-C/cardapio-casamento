@@ -57,9 +57,17 @@
         }
         
         /* Estilo para a barra de navegação ativa */
+        .nav-link {
+            transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+            opacity: 0.6; /* Estado padrão para links inativos */
+        }
+        .nav-link:hover {
+            opacity: 1; /* Opacidade total ao passar o mouse */
+        }
         .nav-link.active {
             color: #DDA15E; /* warm-beige */
             font-weight: 700;
+            opacity: 1; /* Destaque total para o link ativo */
         }
 
         /* Animação de "pulsar" para o toque no celular */
@@ -103,11 +111,11 @@
     <!-- Barra de Navegação Fixa -->
     <nav id="navbar" class="sticky top-0 bg-cream-white/80 backdrop-blur-lg z-50 shadow-md">
         <div class="container mx-auto px-4">
-            <div class="flex justify-center items-center space-x-4 md:space-x-8 py-3 overflow-x-auto whitespace-nowrap">
-                <a href="#welcome" class="nav-link font-display text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Boas-vindas</a>
-                <a href="#main" class="nav-link font-display text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Almoço</a>
-                <a href="#drinks" class="nav-link font-display text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Bebidas</a>
-                <a href="#desserts" class="nav-link font-display text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Sobremesas</a>
+            <div class="flex justify-center items-center space-x-6 sm:space-x-8 py-3 overflow-x-auto whitespace-nowrap">
+                <a href="#welcome" class="nav-link font-display text-base sm:text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Boas-vindas</a>
+                <a href="#main" class="nav-link font-display text-base sm:text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Almoço</a>
+                <a href="#drinks" class="nav-link font-display text-base sm:text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Bebidas</a>
+                <a href="#desserts" class="nav-link font-display text-base sm:text-lg text-dark-charcoal hover:text-warm-beige transition duration-300">Sobremesas</a>
             </div>
         </div>
     </nav>
@@ -311,4 +319,3 @@
 
 </body>
 </html>
-
